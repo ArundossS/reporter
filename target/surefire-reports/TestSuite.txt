@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 0.853 s <<< FAILURE! - in TestSuite
+beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 0.66 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Type' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
+in C:\eclipse\exercise\task\testng.xml
+
+beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 0.66 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Type' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
+in C:\eclipse\exercise\task\testng.xml
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [ReporterTask]" parallel="tests">
+  <parameter name="device.os" value="ios"/>
+  <test name="Device 1">
+    <parameter name="device.os" value="ios"/>
+    <classes>
+      <class name="com.experitest.reporter.task.Login"/>
+    </classes>
+  </test> <!-- Device 1 -->
+  <test name="Device 2">
+    <parameter name="device.os" value="ios"/>
+    <classes>
+      <class name="com.experitest.reporter.task.Login"/>
+    </classes>
+  </test> <!-- Device 2 -->
+  <test name="Device 2(failed)" parallel="tests">
+    <parameter name="device.os" value="ios"/>
+    <classes>
+      <class name="com.experitest.reporter.task.Login">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.experitest.reporter.task.Login -->
+    </classes>
+  </test> <!-- Device 2(failed) -->
+  <test name="Device 1(failed)" parallel="tests">
+    <parameter name="device.os" value="ios"/>
+    <classes>
+      <class name="com.experitest.reporter.task.Login">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.experitest.reporter.task.Login -->
+    </classes>
+  </test> <!-- Device 1(failed) -->
+</suite> <!-- Failed suite [ReporterTask] -->
