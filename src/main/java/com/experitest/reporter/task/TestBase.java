@@ -32,23 +32,21 @@ public class TestBase {
 
 	//Client and Device
 	protected AppiumDriver<WebElement> driver;
-	protected MobileOS deviceOS;
 
 //	private static String getTestNGParam(ITestContext context, String key) {
 //		return context.getCurrentXmlTest().getParameter(key);
 //	}
 
-	protected boolean isMobile;
 	private String reportDirectory = "reports";
 	private String reportFormat = "xml";
 	private String testName = "Untitled";
 
-	@Parameters({"Type"})
+	@Parameters({"Type","Query"})
 	@BeforeTest
-	public void beforeTest(String Param, String Query) throws MalformedURLException {
-		System.out.println(Param);
+	public void beforeTest(String Type, String Query) throws MalformedURLException {
+		System.out.println(Type);
 
-		if (Param.equals("Android")){
+		if (Type.equals("Android")){
 			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setCapability("reportDirectory", reportDirectory);
 			dc.setCapability("reportFormat", reportFormat);
@@ -59,13 +57,13 @@ public class TestBase {
 			dc.setCapability("build.id", buildId);
 			driver = new AndroidDriver<WebElement>(new URL(GRID_URL+"80/wd/hub"), dc);
 		}
-		else if (Param.equals("iOS")){
+		else if (Type.equals("iOS")){
 			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setCapability("reportDirectory", reportDirectory);
 			dc.setCapability("reportFormat", reportFormat);
 			dc.setCapability("testName", testName);
-			dc.setCapability("user", "arundoss");
-			dc.setCapability("password", "Cloud123");
+			dc.setCapability("user", GRID_USERNAME);
+			dc.setCapability("password", GRID_PASSWORD);
 			dc.setCapability("deviceQuery", Query);
 			dc.setCapability("build.id", buildId);
 			driver = new IOSDriver<WebElement>(new URL(GRID_URL+":80/wd/hub"), dc);

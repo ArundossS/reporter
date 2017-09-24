@@ -2,23 +2,22 @@
 <testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="ReporterTask" duration-ms="52" started-at="2017-09-24T17:39:59Z" finished-at="2017-09-24T17:39:59Z">
+  <suite name="ReporterTask" duration-ms="60" started-at="2017-09-24T18:02:00Z" finished-at="2017-09-24T18:02:00Z">
     <groups>
     </groups>
-    <test name="Device 2" duration-ms="52" started-at="2017-09-24T17:39:59Z" finished-at="2017-09-24T17:39:59Z">
+    <test name="Device 2" duration-ms="56" started-at="2017-09-24T18:02:00Z" finished-at="2017-09-24T18:02:00Z">
       <class name="com.experitest.reporter.task.Login">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.experitest.reporter.task.Login@5419f379]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-09-24T20:39:59Z" finished-at="2017-09-24T20:39:59Z">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.experitest.reporter.task.Login@5419f379]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-09-24T21:02:00Z" finished-at="2017-09-24T21:02:00Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Parameter 'Query' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\eclipse\exercise\task\testng.xml]]>
+Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Parameter 'Query' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\eclipse\exercise\task\testng.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
@@ -39,30 +38,29 @@ in C:\eclipse\exercise\task\testng.xml
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="login()[pri:0, instance:com.experitest.reporter.task.Login@5419f379]" name="login" duration-ms="6" started-at="2017-09-24T20:39:59Z" finished-at="2017-09-24T20:39:59Z">
+        <test-method status="SKIP" signature="login()[pri:0, instance:com.experitest.reporter.task.Login@5419f379]" name="login" duration-ms="8" started-at="2017-09-24T21:02:00Z" finished-at="2017-09-24T21:02:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.experitest.reporter.task.Login@5419f379]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-24T20:39:59Z" finished-at="2017-09-24T20:39:59Z">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.experitest.reporter.task.Login@5419f379]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-24T21:02:00Z" finished-at="2017-09-24T21:02:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.experitest.reporter.task.Login -->
     </test> <!-- Device 2 -->
-    <test name="Device 1" duration-ms="52" started-at="2017-09-24T17:39:59Z" finished-at="2017-09-24T17:39:59Z">
+    <test name="Device 1" duration-ms="60" started-at="2017-09-24T18:02:00Z" finished-at="2017-09-24T18:02:00Z">
       <class name="com.experitest.reporter.task.Login">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.experitest.reporter.task.Login@1810399e]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-09-24T20:39:59Z" finished-at="2017-09-24T20:39:59Z">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.experitest.reporter.task.Login@1810399e]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-09-24T21:02:00Z" finished-at="2017-09-24T21:02:00Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Parameter 'Query' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\eclipse\exercise\task\testng.xml]]>
+Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Parameter 'Query' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\eclipse\exercise\task\testng.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
@@ -83,11 +81,11 @@ in C:\eclipse\exercise\task\testng.xml
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="login()[pri:0, instance:com.experitest.reporter.task.Login@1810399e]" name="login" duration-ms="6" started-at="2017-09-24T20:39:59Z" finished-at="2017-09-24T20:39:59Z">
+        <test-method status="SKIP" signature="login()[pri:0, instance:com.experitest.reporter.task.Login@1810399e]" name="login" duration-ms="8" started-at="2017-09-24T21:02:00Z" finished-at="2017-09-24T21:02:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.experitest.reporter.task.Login@1810399e]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-24T20:39:59Z" finished-at="2017-09-24T20:39:59Z">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.experitest.reporter.task.Login@1810399e]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-24T21:02:00Z" finished-at="2017-09-24T21:02:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

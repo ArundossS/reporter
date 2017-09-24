@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 24 20:39:59 IDT 2017</td>
+<td>Started on:</td><td>Sun Sep 24 21:02:00 IDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (52 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (56 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,17 +77,16 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.experitest.reporter.task.Login.beforeTest()'><b>beforeTest</b><br>Test class: com.experitest.reporter.task.Login</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;Query&apos; is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\eclipse\exercise\task\testng.xml
+Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace213252955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace213252955'><pre>org.testng.TestNGException: 
-Parameter &apos;Query&apos; is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\eclipse\exercise\task\testng.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2063839931", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2063839931'><pre>org.testng.TestNGException: 
+Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)

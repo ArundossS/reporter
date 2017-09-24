@@ -1,16 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 1.259 s <<< FAILURE! - in TestSuite
-beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 0.564 s  <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 0.885 s <<< FAILURE! - in TestSuite
+beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 0.681 s  <<< FAILURE!
 org.testng.TestNGException: 
 
-Parameter 'Query' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\eclipse\exercise\task\testng.xml
+Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.
 
-beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 0.568 s  <<< FAILURE!
+beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 0.681 s  <<< FAILURE!
 org.testng.TestNGException: 
 
-Parameter 'Query' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
-in C:\eclipse\exercise\task\testng.xml
+Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.
 

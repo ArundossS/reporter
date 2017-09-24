@@ -155,19 +155,19 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;ReporterTask&quot; parallel=&quot;tests&quot;&gt;
   &lt;test name=&quot;Device 1&quot;&gt;
-    &lt;parameter name=&quot;Type&quot; value=&quot;ios&quot;/&gt;
+    &lt;parameter name=&quot;Type&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.experitest.reporter.task.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Device 1 --&gt;
   &lt;test name=&quot;Device 2&quot;&gt;
-    &lt;parameter name=&quot;Type&quot; value=&quot;ios&quot;/&gt;
+    &lt;parameter name=&quot;Type&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.experitest.reporter.task.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Device 2 --&gt;
   &lt;test name=&quot;Device 2(failed)&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;Type&quot; value=&quot;ios&quot;/&gt;
+    &lt;parameter name=&quot;Type&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.experitest.reporter.task.Login&quot;&gt;
         &lt;methods&gt;
@@ -177,7 +177,7 @@
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Device 2(failed) --&gt;
   &lt;test name=&quot;Device 1(failed)&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;Type&quot; value=&quot;ios&quot;/&gt;
+    &lt;parameter name=&quot;Type&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.experitest.reporter.task.Login&quot;&gt;
         &lt;methods&gt;
@@ -236,16 +236,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'com.experitest.reporter.task.Login')
-data.setCell(0, 3, 6);
+data.setCell(0, 3, 8);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'com.experitest.reporter.task.Login')
-data.setCell(1, 3, 6);
+data.setCell(1, 3, 8);
 window.suiteTableData['ReporterTask']= { tableData: data, tableDiv: 'times-div-ReporterTask'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 16 ms</span>
               <div id="times-div-ReporterTask">
               </div> <!-- times-div-ReporterTask -->
             </div> <!-- times-div -->
