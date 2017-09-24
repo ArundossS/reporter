@@ -5,14 +5,14 @@
 <suite name="ReporterTask" parallel="tests" thread-count="5">
 
 	<test name="Device 1">
-		<parameter name="Type" value="ios" />
+		<parameter name="Type" value="@os='ios' and @category='PHONE'" />
 		<classes>
 			<class name="com.experitest.reporter.task.Login" />
 		</classes>
 	</test>
 
 	<test name="Device 2">
-		<parameter name="Type" value="ios" />
+		<parameter name="Type" value="@os='ios' and @category='PHONE'" />
 		<classes>
 			<class name="com.experitest.reporter.task.Login" />
 		</classes>

@@ -43,7 +43,7 @@ public class TestBase {
 	private String reportFormat = "xml";
 	private String testName = "Untitled";
 
-	@Parameters({"Type","Query"})
+	@Parameters({"Type"})
 	@BeforeTest
 	public void beforeTest(String Param, String Query) throws MalformedURLException {
 		System.out.println(Param);
