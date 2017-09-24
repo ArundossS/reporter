@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" name="Suite" parallel="classes">
-  <test name="Test">
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+
+<suite name="ReporterTask" parallel="tests" thread-count="5">
+
+	<test name="Device 1">
+		<parameter name="device.os" value="ios" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
+
+	<test name="Device 2">
+		<parameter name="device.os" value="ios" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
+
+</suite>
