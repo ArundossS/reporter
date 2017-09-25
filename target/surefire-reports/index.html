@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-ReporterTask">
-              <span class="suite-name border-skipped">ReporterTask</span>
+              <span class="suite-name border-failed">ReporterTask</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-ReporterTask" class="hide-methods skipped suite-ReporterTask"> (hide)</a> <!-- hide-methods skipped suite-ReporterTask -->
-                      <a href="#" panel-name="suite-ReporterTask" class="show-methods skipped suite-ReporterTask"> (show)</a> <!-- show-methods skipped suite-ReporterTask -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ReporterTask" class="hide-methods failed suite-ReporterTask"> (hide)</a> <!-- hide-methods failed suite-ReporterTask -->
+                      <a href="#" panel-name="suite-ReporterTask" class="show-methods failed suite-ReporterTask"> (show)</a> <!-- show-methods failed suite-ReporterTask -->
                     </span>
-                    <div class="method-list-content skipped suite-ReporterTask">
+                    <div class="method-list-content failed suite-ReporterTask">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ReporterTask" title="com.experitest.reporter.task.Login" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ReporterTask" title="com.experitest.reporter.task.Login" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-ReporterTask -->
+                    </div> <!-- method-list-content failed suite-ReporterTask -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ReporterTask" class="panel ReporterTask">
-          <div class="suite-ReporterTask-class-skipped">
+          <div class="suite-ReporterTask-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.experitest.reporter.task.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -133,6 +133,43 @@
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@text=&apos;Login&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.83 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-K72D0KT&apos;, ip: &apos;192.168.1.129&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=10.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={build.id=7, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=Untitled}, device.serialNumber=7dc39287e84ae7c6f1459f9ba1b8e7d84a8fd002, device.version=10.2.1, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=1242x2208, useKeystore=false, build.id=7, cloudViewLink=http://stage.experitest.com:80/agent-15/#/0uP5wIhHLZd5X6yX?1
+Picked up Grid Node (seetest_7777)
+Reserved Device :  iPhone6s-plus_B16 - Hexaware, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-24_21-13-19-dd4c20cc-d125-461e-aea5-809f3062b084/9588870b-79cf-4c37-80f4-585b485f4ae0, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 6s+, device.name= iPhone6s-plus_B16 - Hexaware, projectName=, gridNodePort=7777, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2017-09-24_21-13-19-dd4c20cc-d125-461e-aea5-809f3062b084
+*** Element info: {Using=xpath, value=//*[@text=&apos;Login&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.experitest.reporter.task.Login.login(Login.java:13)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -140,10 +177,47 @@
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@placeholder=&apos;Username&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.65 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-K72D0KT&apos;, ip: &apos;192.168.1.129&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=9.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={build.id=7, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=Untitled}, device.serialNumber=d8b8474d72897e5dff1ad04c3c4c05a04b5a43b1, device.version=9.3.1, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=640x1136, useKeystore=false, build.id=7, cloudViewLink=http://stage.experitest.com:80/agent-15/#/wroO3MqXNVhEu2VP?1
+Picked up Grid Node (seetest_7778)
+Reserved Device : iPhone5s_B0040, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908/a6af6a04-aebe-4573-bca0-c637e6d6e4c7, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 5s, device.name=iPhone5s_B0040, projectName=, gridNodePort=7778, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908
+*** Element info: {Using=xpath, value=//*[@placeholder=&apos;Username&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.experitest.reporter.task.Login.login(Login.java:11)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ReporterTask-class-skipped -->
+          </div> <!-- suite-ReporterTask-class-failed -->
         </div> <!-- panel ReporterTask -->
         <div panel-name="test-xml-ReporterTask" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -155,33 +229,45 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;ReporterTask&quot; parallel=&quot;tests&quot;&gt;
   &lt;test name=&quot;Device 1&quot;&gt;
-    &lt;parameter name=&quot;Type&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
+    &lt;parameter name=&quot;Type&quot; value=&quot;iOS&quot;/&gt;
+    &lt;parameter name=&quot;Query&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.experitest.reporter.task.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Device 1 --&gt;
   &lt;test name=&quot;Device 2&quot;&gt;
-    &lt;parameter name=&quot;Type&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
+    &lt;parameter name=&quot;Type&quot; value=&quot;iOS&quot;/&gt;
+    &lt;parameter name=&quot;Query&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.experitest.reporter.task.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Device 2 --&gt;
   &lt;test name=&quot;Device 2(failed)&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;Type&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
+    &lt;parameter name=&quot;Type&quot; value=&quot;iOS&quot;/&gt;
+    &lt;parameter name=&quot;Query&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.experitest.reporter.task.Login&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;beforeTest&quot;/&gt;
+          &lt;include name=&quot;beforeTest&quot;/&gt;
+          &lt;include name=&quot;afterClass&quot;/&gt;
+          &lt;include name=&quot;afterClass&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.experitest.reporter.task.Login --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Device 2(failed) --&gt;
   &lt;test name=&quot;Device 1(failed)&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;Type&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
+    &lt;parameter name=&quot;Type&quot; value=&quot;iOS&quot;/&gt;
+    &lt;parameter name=&quot;Query&quot; value=&quot;@os=&amp;#039;ios&amp;#039; and @category=&amp;#039;PHONE&amp;#039;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.experitest.reporter.task.Login&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;beforeTest&quot;/&gt;
+          &lt;include name=&quot;beforeTest&quot;/&gt;
+          &lt;include name=&quot;afterClass&quot;/&gt;
+          &lt;include name=&quot;afterClass&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.experitest.reporter.task.Login --&gt;
     &lt;/classes&gt;
@@ -236,16 +322,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'com.experitest.reporter.task.Login')
-data.setCell(0, 3, 8);
+data.setCell(0, 3, 9438);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'com.experitest.reporter.task.Login')
-data.setCell(1, 3, 8);
+data.setCell(1, 3, 2650);
 window.suiteTableData['ReporterTask']= { tableData: data, tableDiv: 'times-div-ReporterTask'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 ms</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-ReporterTask">
               </div> <!-- times-div-ReporterTask -->
             </div> <!-- times-div -->
@@ -272,14 +358,34 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.experitest.reporter.task.Login</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">login</span>
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(iOS, @os='ios' and @category='PHONE')</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(iOS, @os='ios' and @category='PHONE')</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">16444 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">24716 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">25929 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">27370 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

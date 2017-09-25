@@ -1,14 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 0.885 s <<< FAILURE! - in TestSuite
-beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 0.681 s  <<< FAILURE!
-org.testng.TestNGException: 
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 31.278 s <<< FAILURE! - in TestSuite
+login(com.experitest.reporter.task.Login)  Time elapsed: 1.221 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element (An element could not be located on the page using the given search parameters (XPATH='//*[@text='Login']'))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.83 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-K72D0KT', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=10.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={build.id=7, deviceQuery=@os='ios' and @category='PHONE', reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=Untitled}, device.serialNumber=7dc39287e84ae7c6f1459f9ba1b8e7d84a8fd002, device.version=10.2.1, deviceQuery=@os='ios' and @category='PHONE', automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=1242x2208, useKeystore=false, build.id=7, cloudViewLink=http://stage.experitest.com:80/agent-15/#/0uP5wIhHLZd5X6yX?1
+Picked up Grid Node (seetest_7777)
+Reserved Device :  iPhone6s-plus_B16 - Hexaware, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-24_21-13-19-dd4c20cc-d125-461e-aea5-809f3062b084/9588870b-79cf-4c37-80f4-585b485f4ae0, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 6s+, device.name= iPhone6s-plus_B16 - Hexaware, projectName=, gridNodePort=7777, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2017-09-24_21-13-19-dd4c20cc-d125-461e-aea5-809f3062b084
+*** Element info: {Using=xpath, value=//*[@text='Login']}
+	at com.experitest.reporter.task.Login.login(Login.java:13)
 
-Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.
-
-beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 0.681 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Method beforeTest requires 2 parameters but 1 were supplied in the @Configuration annotation.
+login(com.experitest.reporter.task.Login)  Time elapsed: 2.658 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element (An element could not be located on the page using the given search parameters (XPATH='//*[@placeholder='Username']'))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.65 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-K72D0KT', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=9.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={build.id=7, deviceQuery=@os='ios' and @category='PHONE', reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=Untitled}, device.serialNumber=d8b8474d72897e5dff1ad04c3c4c05a04b5a43b1, device.version=9.3.1, deviceQuery=@os='ios' and @category='PHONE', automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=640x1136, useKeystore=false, build.id=7, cloudViewLink=http://stage.experitest.com:80/agent-15/#/wroO3MqXNVhEu2VP?1
+Picked up Grid Node (seetest_7778)
+Reserved Device : iPhone5s_B0040, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908/a6af6a04-aebe-4573-bca0-c637e6d6e4c7, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 5s, device.name=iPhone5s_B0040, projectName=, gridNodePort=7778, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908
+*** Element info: {Using=xpath, value=//*[@placeholder='Username']}
+	at com.experitest.reporter.task.Login.login(Login.java:11)
 

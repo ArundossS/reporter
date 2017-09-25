@@ -47,6 +47,7 @@ public class TestBase {
 		System.out.println(Type);
 
 		if (Type.equals("Android")){
+			System.out.println(buildId);
 			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setCapability("reportDirectory", reportDirectory);
 			dc.setCapability("reportFormat", reportFormat);
@@ -58,6 +59,7 @@ public class TestBase {
 			driver = new AndroidDriver<WebElement>(new URL(GRID_URL+"80/wd/hub"), dc);
 		}
 		else if (Type.equals("iOS")){
+			System.out.println(buildId);
 			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setCapability("reportDirectory", reportDirectory);
 			dc.setCapability("reportFormat", reportFormat);
