@@ -17,6 +17,8 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
+import io.appium.java_client.remote.IOSMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 public class TestBase {
 
@@ -68,6 +70,8 @@ public class TestBase {
 			dc.setCapability("password", GRID_PASSWORD);
 			dc.setCapability("deviceQuery", Query);
 			dc.setCapability("build.id", buildId);
+			dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
+			dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "cloud:com.experitest.ExperiBank");
 			driver = new IOSDriver<WebElement>(new URL(GRID_URL+":80/wd/hub"), dc);
 		}
 
