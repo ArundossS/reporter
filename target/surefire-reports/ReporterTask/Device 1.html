@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Device 1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 11 23:39:36 IDT 2017</td>
+<td>Started on:</td><td>Thu Oct 12 00:12:24 IDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>86 seconds (86116 ms)</td>
+<tr><td>Total time:</td><td>84 seconds (84669 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,99 +76,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.experitest.reporter.task.Login.login()'><b>login</b><br>Test class: com.experitest.reporter.task.Login</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (TAG_NAME=&apos;H1&apos;))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.96 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;DESKTOP-K72D0KT&apos;, ip: &apos;192.168.2.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=10.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={app=cloud:com.experitest.ExperiBank, build.id=11, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, instrumentApp=true, bundleId=com.experitest.ExperiBank, reportDirectory=reports, reportFormat=xml, projectName=Default, platformName=iOS, testName=Untitled}, device.serialNumber=1e3289cb21bbb133c149e1e8529bde19dc31b91a, device.version=10.2.1, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=640x1136, useKeystore=false, app=cloud:com.experitest.ExperiBank, build.id=11, cloudViewLink=http://stage.experitest.com:80/agent-20/#/xI4Te3gX3hFWG98v?1
-Picked up Grid Node (seetest_7777)
-Reserved Device : iPhone5_B13, instrumentApp=true, device.manufacture=Apple, device.category=PHONE, bundleId=cloud:com.experitest.ExperiBank, autoDismissAlerts=false, reportUrl=http://stage-reporter.experitest.com:80/#/test/2513, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 5s, device.name=iPhone5_B13, projectName=Default, gridNodePort=7777, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2017-10-11_23-39-25-ad1e1572-36da-4a91-a02b-048b5b7aa25c
-*** Element info: {Using=tag name, value=H1}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:445)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByTagName(DefaultGenericMobileDriver.java:96)
-	at io.appium.java_client.AppiumDriver.findElementByTagName(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByTagName(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByTagName.findElement(By.java:334)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at com.experitest.reporter.task.Login.login(Login.java:14)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace905137914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace905137914'><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (TAG_NAME=&apos;H1&apos;))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.96 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;DESKTOP-K72D0KT&apos;, ip: &apos;192.168.2.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=10.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={app=cloud:com.experitest.ExperiBank, build.id=11, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, instrumentApp=true, bundleId=com.experitest.ExperiBank, reportDirectory=reports, reportFormat=xml, projectName=Default, platformName=iOS, testName=Untitled}, device.serialNumber=1e3289cb21bbb133c149e1e8529bde19dc31b91a, device.version=10.2.1, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=640x1136, useKeystore=false, app=cloud:com.experitest.ExperiBank, build.id=11, cloudViewLink=http://stage.experitest.com:80/agent-20/#/xI4Te3gX3hFWG98v?1
-Picked up Grid Node (seetest_7777)
-Reserved Device : iPhone5_B13, instrumentApp=true, device.manufacture=Apple, device.category=PHONE, bundleId=cloud:com.experitest.ExperiBank, autoDismissAlerts=false, reportUrl=http://stage-reporter.experitest.com:80/#/test/2513, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 5s, device.name=iPhone5_B13, projectName=Default, gridNodePort=7777, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2017-10-11_23-39-25-ad1e1572-36da-4a91-a02b-048b5b7aa25c
-*** Element info: {Using=tag name, value=H1}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:445)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByTagName(DefaultGenericMobileDriver.java:96)
-	at io.appium.java_client.AppiumDriver.findElementByTagName(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByTagName(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByTagName.findElement(By.java:334)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at com.experitest.reporter.task.Login.login(Login.java:14)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>20</td>
+<td></td>
+<td>15</td>
 <td>com.experitest.reporter.task.Login@2ef5e5e3</td></tr>
 </table><p>
 </body>
