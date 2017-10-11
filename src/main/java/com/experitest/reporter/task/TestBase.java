@@ -41,7 +41,7 @@ public class TestBase {
 
 	private String reportDirectory = "reports";
 	private String reportFormat = "xml";
-	private String testName = "Untitled";
+	private String testName = "Arundoss_reporter_tests";
 
 	@Parameters({"Type","Query"})
 	@BeforeTest
