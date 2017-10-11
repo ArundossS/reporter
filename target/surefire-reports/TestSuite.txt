@@ -1,20 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 58.826 s <<< FAILURE! - in TestSuite
-beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 58.634 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-session not created (failed to launch cloud:com.experitest.ExperiBank, because it is not installed on the device (reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-25_13-31-34-bb6ce72e-41d7-461c-9934-985e0aea0e03/dd3728c5-06f3-4784-8aa4-2d20e0e29249))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 56.62 seconds
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 87.041 s <<< FAILURE! - in TestSuite
+login(com.experitest.reporter.task.Login)  Time elapsed: 15.408 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element (An element could not be located on the page using the given search parameters (TAG_NAME='H1'))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.89 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-K72D0KT', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+System info: host: 'DESKTOP-K72D0KT', ip: '192.168.2.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=10.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={app=cloud:com.experitest.ExperiBank, build.id=11, deviceQuery=@os='ios' and @category='PHONE', instrumentApp=true, bundleId=com.experitest.ExperiBank, reportDirectory=reports, reportFormat=xml, projectName=Default, platformName=iOS, testName=Untitled}, device.serialNumber=7dc39287e84ae7c6f1459f9ba1b8e7d84a8fd002, device.version=10.2.1, deviceQuery=@os='ios' and @category='PHONE', automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=1242x2208, useKeystore=false, app=cloud:com.experitest.ExperiBank, build.id=11, cloudViewLink=http://stage.experitest.com:80/agent-15/#/N0Ch0eIGhR9lCN5X?1
+Picked up Grid Node (seetest_7777)
+Reserved Device : iPhone6s-plus_B16, instrumentApp=true, device.manufacture=Apple, device.category=PHONE, bundleId=cloud:com.experitest.ExperiBank, autoDismissAlerts=false, reportUrl=http://stage-reporter.experitest.com:80/#/test/2514, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 6s+, device.name=iPhone6s-plus_B16, projectName=Default, gridNodePort=7777, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2017-10-11_23-39-25-071902f7-d7e3-4c12-9dfb-64dff6331363
+*** Element info: {Using=tag name, value=H1}
+	at com.experitest.reporter.task.Login.login(Login.java:14)
 
-beforeTest(com.experitest.reporter.task.Login)  Time elapsed: 58.634 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-session not created (failed to launch cloud:com.experitest.ExperiBank, because it is not installed on the device (reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-25_13-31-34-bba11245-734f-4125-b3cb-40c24e004794/7c8c6dbf-f0cf-4b04-a2d6-9cc73f163912))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 56.62 seconds
+login(com.experitest.reporter.task.Login)  Time elapsed: 20.544 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element (An element could not be located on the page using the given search parameters (TAG_NAME='H1'))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.96 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-K72D0KT', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+System info: host: 'DESKTOP-K72D0KT', ip: '192.168.2.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=10.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={app=cloud:com.experitest.ExperiBank, build.id=11, deviceQuery=@os='ios' and @category='PHONE', instrumentApp=true, bundleId=com.experitest.ExperiBank, reportDirectory=reports, reportFormat=xml, projectName=Default, platformName=iOS, testName=Untitled}, device.serialNumber=1e3289cb21bbb133c149e1e8529bde19dc31b91a, device.version=10.2.1, deviceQuery=@os='ios' and @category='PHONE', automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=640x1136, useKeystore=false, app=cloud:com.experitest.ExperiBank, build.id=11, cloudViewLink=http://stage.experitest.com:80/agent-20/#/xI4Te3gX3hFWG98v?1
+Picked up Grid Node (seetest_7777)
+Reserved Device : iPhone5_B13, instrumentApp=true, device.manufacture=Apple, device.category=PHONE, bundleId=cloud:com.experitest.ExperiBank, autoDismissAlerts=false, reportUrl=http://stage-reporter.experitest.com:80/#/test/2513, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 5s, device.name=iPhone5_B13, projectName=Default, gridNodePort=7777, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2017-10-11_23-39-25-ad1e1572-36da-4a91-a02b-048b5b7aa25c
+*** Element info: {Using=tag name, value=H1}
+	at com.experitest.reporter.task.Login.login(Login.java:14)
 

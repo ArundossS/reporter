@@ -11,7 +11,6 @@ public class Login extends TestBase {
 		driver.findElement(By.xpath("//*[@placeholder='Username']")).sendKeys("company");
 		driver.findElement(By.xpath("//*[@placeholder='Password']")).sendKeys("company");
 		driver.findElement(By.xpath("//*[@text='Login']")).click();	
-		System.out.println(driver.findElement(By.tagName("H1")).getText());
 		driver.findElement(By.xpath("//*[@text='Logout']")).click();
 	}
 	
