@@ -70,6 +70,7 @@ public class TestBase {
 			dc.setCapability("user", GRID_USERNAME);
 			dc.setCapability("password", GRID_PASSWORD);
 			dc.setCapability("deviceQuery", Query);
+			dc.setCapability("TestType", "Reporter");
 			dc.setCapability("build.id", buildId);
 			dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
 			dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
