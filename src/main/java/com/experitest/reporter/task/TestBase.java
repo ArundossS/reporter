@@ -66,12 +66,13 @@ public class TestBase {
 			dc.setCapability("reportDirectory", reportDirectory);
 			dc.setCapability("reportFormat", reportFormat);
 			dc.setCapability("testName", testName);
+			dc.setCapability("projectName", "Default");
 			dc.setCapability("user", GRID_USERNAME);
 			dc.setCapability("password", GRID_PASSWORD);
 			dc.setCapability("deviceQuery", Query);
 			dc.setCapability("build.id", buildId);
 			dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
-			dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "cloud:com.experitest.ExperiBank");
+			dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 			driver = new IOSDriver<WebElement>(new URL(GRID_URL+":80/wd/hub"), dc);
 		}
 
