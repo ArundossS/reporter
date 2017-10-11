@@ -26,8 +26,6 @@
           <include name="login"/>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
-          <include name="afterClass"/>
-          <include name="afterClass"/>
         </methods>
       </class> <!-- com.experitest.reporter.task.Login -->
     </classes>
@@ -41,8 +39,6 @@
           <include name="login"/>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
-          <include name="afterClass"/>
-          <include name="afterClass"/>
         </methods>
       </class> <!-- com.experitest.reporter.task.Login -->
     </classes>

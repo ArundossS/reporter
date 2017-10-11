@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Device 1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 24 21:13:16 IDT 2017</td>
+<td>Started on:</td><td>Mon Sep 25 13:31:33 IDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30540 ms)</td>
+<tr><td>Total time:</td><td>57 seconds (57945 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,61 +68,43 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.experitest.reporter.task.Login.login()'><b>login</b><br>Test class: com.experitest.reporter.task.Login</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@placeholder=&apos;Username&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.65 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td title='com.experitest.reporter.task.Login.beforeTest()'><b>beforeTest</b><br>Test class: com.experitest.reporter.task.Login<br>Parameters: iOS, @os='ios' and @category='PHONE'</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created (failed to launch cloud:com.experitest.ExperiBank, because it is not installed on the device (reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-25_13-31-34-bba11245-734f-4125-b3cb-40c24e004794/7c8c6dbf-f0cf-4b04-a2d6-9cc73f163912))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 56.62 seconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;DESKTOP-K72D0KT&apos;, ip: &apos;192.168.1.129&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=9.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={build.id=7, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=Untitled}, device.serialNumber=d8b8474d72897e5dff1ad04c3c4c05a04b5a43b1, device.version=9.3.1, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=640x1136, useKeystore=false, build.id=7, cloudViewLink=http://stage.experitest.com:80/agent-15/#/wroO3MqXNVhEu2VP?1
-Picked up Grid Node (seetest_7778)
-Reserved Device : iPhone5s_B0040, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908/a6af6a04-aebe-4573-bca0-c637e6d6e4c7, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 5s, device.name=iPhone5s_B0040, projectName=, gridNodePort=7778, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908
-*** Element info: {Using=xpath, value=//*[@placeholder=&apos;Username&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at com.experitest.reporter.task.Login.login(Login.java:11)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:36)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:82)
+	at com.experitest.reporter.task.TestBase.beforeTest(TestBase.java:75)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace935796456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace935796456'><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@placeholder=&apos;Username&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.65 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1660158789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1660158789'><pre>org.openqa.selenium.SessionNotCreatedException: session not created (failed to launch cloud:com.experitest.ExperiBank, because it is not installed on the device (reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-25_13-31-34-bba11245-734f-4125-b3cb-40c24e004794/7c8c6dbf-f0cf-4b04-a2d6-9cc73f163912))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 56.62 seconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;DESKTOP-K72D0KT&apos;, ip: &apos;192.168.1.129&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=9.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={build.id=7, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=Untitled}, device.serialNumber=d8b8474d72897e5dff1ad04c3c4c05a04b5a43b1, device.version=9.3.1, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=Untitled, device.screenSize=640x1136, useKeystore=false, build.id=7, cloudViewLink=http://stage.experitest.com:80/agent-15/#/wroO3MqXNVhEu2VP?1
-Picked up Grid Node (seetest_7778)
-Reserved Device : iPhone5s_B0040, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=/private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/headless/CLOUD-SID_2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908/a6af6a04-aebe-4573-bca0-c637e6d6e4c7, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 5s, device.name=iPhone5s_B0040, projectName=, gridNodePort=7778, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908
-*** Element info: {Using=xpath, value=//*[@placeholder=&apos;Username&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -133,32 +115,24 @@ Session ID: CLOUD-SID:2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at com.experitest.reporter.task.Login.login(Login.java:11)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:36)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:82)
+	at com.experitest.reporter.task.TestBase.beforeTest(TestBase.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
@@ -168,7 +142,33 @@ Session ID: CLOUD-SID:2017-09-24_21-13-19-7277b544-bfe5-4dff-9bcf-6975dda65908
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>2</td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.experitest.reporter.task.Login.afterClass()'><b>afterClass</b><br>Test class: com.experitest.reporter.task.Login</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.experitest.reporter.task.Login.login()'><b>login</b><br>Test class: com.experitest.reporter.task.Login</td>
+<td></td>
+<td>0</td>
 <td>com.experitest.reporter.task.Login@1810399e</td></tr>
 </table><p>
 </body>
