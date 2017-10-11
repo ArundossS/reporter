@@ -43,16 +43,11 @@
 		</dependency>
 
 		<dependency>
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
+			<groupId>com.experitest</groupId>
+			<artifactId>appium</artifactId>
 			<version>4.1.2</version>
 		</dependency>
 
 	</dependencies>
 
-
-</project>
-
-
-
-  
+</project>  
