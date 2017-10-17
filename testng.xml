@@ -19,5 +19,28 @@
 			<class name="com.experitest.reporter.task.Login" />
 		</classes>
 	</test>
+	<test name="Device 3">
+		<parameter name="Type" value="iOS" />
+		<parameter name="Query" value="@os='ios' and @category='PHONE'" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
+	
+	<test name="Device 4">
+		<parameter name="Type" value="iOS" />
+		<parameter name="Query" value="@os='ios' and @category='PHONE'" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
+	
+	<test name="Device 5">
+		<parameter name="Type" value="iOS" />
+		<parameter name="Query" value="@os='ios' and @category='PHONE'" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
 
 </suite>
