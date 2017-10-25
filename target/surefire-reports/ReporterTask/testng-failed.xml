@@ -17,6 +17,27 @@
       <class name="com.experitest.reporter.task.Login"/>
     </classes>
   </test> <!-- Device 2 -->
+  <test name="Device 3">
+    <parameter name="Type" value="iOS"/>
+    <parameter name="Query" value="@os=&#039;ios&#039; and @category=&#039;PHONE&#039;"/>
+    <classes>
+      <class name="com.experitest.reporter.task.Login"/>
+    </classes>
+  </test> <!-- Device 3 -->
+  <test name="Device 4">
+    <parameter name="Type" value="iOS"/>
+    <parameter name="Query" value="@os=&#039;ios&#039; and @category=&#039;PHONE&#039;"/>
+    <classes>
+      <class name="com.experitest.reporter.task.Login"/>
+    </classes>
+  </test> <!-- Device 4 -->
+  <test name="Device 5">
+    <parameter name="Type" value="iOS"/>
+    <parameter name="Query" value="@os=&#039;ios&#039; and @category=&#039;PHONE&#039;"/>
+    <classes>
+      <class name="com.experitest.reporter.task.Login"/>
+    </classes>
+  </test> <!-- Device 5 -->
   <test name="Device 1(failed)" parallel="tests">
     <parameter name="Type" value="iOS"/>
     <parameter name="Query" value="@os=&#039;ios&#039; and @category=&#039;PHONE&#039;"/>
@@ -26,10 +47,55 @@
           <include name="login"/>
           <include name="beforeTest"/>
           <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
           <include name="afterClass"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.experitest.reporter.task.Login -->
     </classes>
   </test> <!-- Device 1(failed) -->
+  <test name="Device 4(failed)" parallel="tests">
+    <parameter name="Type" value="iOS"/>
+    <parameter name="Query" value="@os=&#039;ios&#039; and @category=&#039;PHONE&#039;"/>
+    <classes>
+      <class name="com.experitest.reporter.task.Login">
+        <methods>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.experitest.reporter.task.Login -->
+    </classes>
+  </test> <!-- Device 4(failed) -->
+  <test name="Device 3(failed)" parallel="tests">
+    <parameter name="Type" value="iOS"/>
+    <parameter name="Query" value="@os=&#039;ios&#039; and @category=&#039;PHONE&#039;"/>
+    <classes>
+      <class name="com.experitest.reporter.task.Login">
+        <methods>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.experitest.reporter.task.Login -->
+    </classes>
+  </test> <!-- Device 3(failed) -->
 </suite> <!-- Failed suite [ReporterTask] -->

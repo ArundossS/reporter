@@ -32,10 +32,6 @@ public class TestBase {
 	//Client and Device
 	protected AppiumDriver<WebElement> driver;
 
-//	private static String getTestNGParam(ITestContext context, String key) {
-//		return context.getCurrentXmlTest().getParameter(key);
-//	}
-
 	private String reportDirectory = "reports";
 	private String reportFormat = "xml";
 	private String testName = "Arundoss_reporter_tests";
@@ -67,7 +63,7 @@ public class TestBase {
 			dc.setCapability("user", GRID_USERNAME);
 			dc.setCapability("password", GRID_PASSWORD);
 			dc.setCapability("deviceQuery", Query);
-			dc.setCapability("TestType", "Reporter");
+			dc.setCapability("TestType", "Guy_Reporter_Task");
 			dc.setCapability("build.id", buildId);
 			dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
 			dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
