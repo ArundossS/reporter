@@ -2,7 +2,7 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ReporterTask" parallel="tests" thread-count="5">
+<suite name="ReporterTask" parallel="tests" thread-count="10">
 
 	<test name="Device 1">
 		<parameter name="Type" value="iOS" />
@@ -36,6 +36,44 @@
 	</test>
 	
 	<test name="Device 5">
+		<parameter name="Type" value="iOS" />
+		<parameter name="Query" value="@os='ios' and @category='PHONE'" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
+	<test name="Device 6">
+		<parameter name="Type" value="iOS" />
+		<parameter name="Query" value="@os='ios' and @category='PHONE'" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
+
+	<test name="Device 7">
+		<parameter name="Type" value="iOS" />
+		<parameter name="Query" value="@os='ios' and @category='PHONE'" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
+	<test name="Device 8">
+		<parameter name="Type" value="iOS" />
+		<parameter name="Query" value="@os='ios' and @category='PHONE'" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
+	
+	<test name="Device 9">
+		<parameter name="Type" value="iOS" />
+		<parameter name="Query" value="@os='ios' and @category='PHONE'" />
+		<classes>
+			<class name="com.experitest.reporter.task.Login" />
+		</classes>
+	</test>
+	
+	<test name="Device 10">
 		<parameter name="Type" value="iOS" />
 		<parameter name="Query" value="@os='ios' and @category='PHONE'" />
 		<classes>
